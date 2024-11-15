@@ -7,7 +7,7 @@
     "server": "nodemon server.js",
     "websiteportfolio": "npm start --prefix websiteportfolio",
     "dev": "concurrently \"npm run server\" \"npm run websiteportfolio\"",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION =flase npm install --prefix websiteportfolio && npm run build --prefix websiteportfolio"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION =flase npm install --prefix websiteportfolio && npm run build --prefix websiteportfolio"
   },
   "author": "",
   "license": "ISC",
