@@ -1,0 +1,23 @@
+{
+  "name": "myprofile",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js",
+    "websiteportfolio": "npm start --prefix websiteportfolio",
+    "dev": "concurrently \"npm run server\" \"npm run websiteportfolio\"",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION =flase npm install --prefix websiteportfolio && npm run build --prefix websiteportfolio"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "nodemailer": "^6.9.16",
+    "nodemon": "^3.1.7"
+  }
+}
